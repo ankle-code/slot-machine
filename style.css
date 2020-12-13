@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.machine {
+    max-width: 900px;
+    width: 98%;
+    background-image: url(images/painel.png);
+    background-size: 100%;
+    height: 750px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.machine--on {
+    background-image: url(images/leverDown.png);
+}
+
+.machine__container {
+    max-width: 72%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.machine__result{
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.machine__item {
+    max-width: 100px;
+    margin: 50% 8% 20% 8%; 
+    height: 180px;
+    position: relative;
+    left: 10%;
+}
+
+.machine__image {
+    max-width: 100%;
+}
+
+.machine__image--sort{
+    animation-name: sort;
+    animation-duration: 0.1s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+.machine__button {
+    width: 140%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    outline: 0;
+}
+
+.machine__button--hidden{
+    display: none;
+}
+
+.machine__button--on{
+    top: 28%;
+}
+
+@keyframes sort {
+    0% {
+        top: -15%;
+    }
+    100%{
+        top: 15%;
+    }
+}
+
+@media screen and (min-width: 400px) {
+
+    @keyframes sort {
+        0% {
+            top: -20%;
+        }
+        100%{
+            top: 20%;
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+
+    
+    @keyframes sort {
+        0% {
+            top: -30%;
+        }
+        100%{
+            top: 30%;
+        }
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    .card__box {
+        margin: 51% 9%;
+    }
+
+    @keyframes sort {
+        0% {
+            top: -45%;
+        }
+        100%{
+            top: 45%;
+        }
+    }
+}
+
+@media screen and (min-width: 900px) {
+    @keyframes sort {
+        0% {
+            top: -50%;
+        }
+        100%{
+            top: 50%;
+        }
+    }
+}
