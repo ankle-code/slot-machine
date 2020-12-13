@@ -62,7 +62,7 @@ function verification() {
     const slot3 = document.querySelectorAll('img')[2].src;
     
     if(slot1 === slot2 && slot2 === slot3){
-        resultText.textContent = "You Win, Nice!!! :^)";
+        resultText.textContent = "You Won, Nice!!! :^)";
         resultText.style.color = "#2ad890";
     }
     else if(slot1 === slot2 || slot2 === slot3 || slot1 === slot3){
